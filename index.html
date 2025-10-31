@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+let sent = prompt("Enter a sentence:");
+
+let words = sent.trim().split(" ");
+let wordCount = words.length;
+
+let replace = prompt("Enter the word you want to replace:");
+let replaced = prompt("Enter the new word:");
+let newSentence = sent.split(replace).join(replaced);
+
+let substring = prompt("Enter a word to check if it exists in the sentence:");
+let isPresent = sent.indexOf(substring) !== -1;
+
+let output = "Original sentence: " + sent + "\n" +"Modified sentence: " + newSentence + "\n" +"Word count: " + wordCount + "\n" +"Is \"" + substring + "\" present? " + (isPresent ? "Yes" : "No");
+
+alert(output);
+
+</script>
+<body>
+  
+</body>
+</html>
